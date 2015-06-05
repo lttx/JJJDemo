@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>首页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <style type="text/css">
+        body, html,#map {width: 100%;height: 100%;overflow: hidden;margin:0;}
+    </style>
+
+
+</head>
+<body>
+<div id="container-fluid">
+    <a href="http://www.coilabs.com"><img src="image/logo.png" class="navbar-collapse"></a>
+    <ul class="navbar">
+        <li class="nav-item">数据统计</li>
+        <li class="active-nav-item">
+            <div class="deploy">
+                <span >部署地区</span>
+                <img  style="margin-left: 5px" src="image/wgrey-down.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="nav-beijing.html">北京</a>
+                    <a href="nav-tianjin.html">天津</a>
+                    <a href="nav-hebei.html">河北</a>
+                </ul>
+            </div></li>
+
+        <li class="nav-item">
+            <div class="deploy">
+                <span >部署案例</span>
+                <img  style="margin-left: 5px" src="image/wgrey-down.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="windroad_apply.html">风道应用</a>
+                    <a href="polutionlevel.html">各区污染排名</a>
+                    <a href="roadpolution.html">道路管理</a>
+                    <a>扬尘管理</a>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item"><img src="image/user.png" class="userimg">
+            <span><a id="username" style="color: white">admin</a></span>
+        </li>
+    </ul>
+
+
+    <div class="adapter"><span id="adapterbtn">点击此处进行相关操作</span>
+        <div id="menu2">
+            <ul>
+                <p><a href="navigation.html">部署地区</a></p>
+                <p><a href="windroad_apply.html">部署案例</a></p>
+                <p><a href="#">数据统计</a></p>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+    <div id="map" class="map"></div>
+
+
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6c91160cd86ca4b9840a7ad5e7a81e44"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/nav.js" charset="utf-8"></script>
+</html>

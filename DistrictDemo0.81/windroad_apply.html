@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>风道应用</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/windroad.css" rel="stylesheet">
+    <style type="text/css">
+        body, html,#map {width: 100%;height: 100%;overflow: hidden;margin:0;}
+    </style>
+</head>
+<body>
+<div id="container-fluid">
+    <a href="http://www.coilabs.com"><img src="image/logo.png" class="navbar-collapse"></a>
+    <ul class="navbar">
+        <li class="nav-item">数据统计</li>
+        <li class="nav-item">
+            <div class="deploy">
+                <span >部署地区</span>
+                <img  style="margin-left: 5px" src="image/wgrey-down.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="nav-beijing.html">北京</a>
+                    <a href="nav-tianjin.html">天津</a>
+                    <a href="nav-hebei.html">河北</a>
+                </ul>
+            </div></li>
+
+        <li class="active-nav-item">
+            <div class="deploy">
+                <span >部署案例</span>
+                <img  style="margin-left: 5px" src="image/wgrey-down.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="windroad_apply.html">风道应用</a>
+                    <a href="polutionlevel.html">各区污染排名</a>
+                    <a href="roadpolution.html">道路管理</a>
+                    <a>扬尘管理</a>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item"><img src="image/user.png" class="userimg">
+            <span><a id="username" style="color: white">admin</a></span>
+        </li>
+    </ul>
+
+
+    <div class="adapter"><span id="adapterbtn">点击此处进行相关操作</span>
+        <div id="menu2">
+            <ul>
+                <p>部署地图</p>
+                <p>实时监测</p>
+                <p>统计数据</p>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="left">
+    <div class="left-tittle">风道应用</div>
+    <div class="city">
+        <img src="image/grey-right.png" class="left-tittle-img">
+        <p class="city_info">北京</p>
+    <ul class="city_child">
+        <li>朝阳区</li>
+        <li>海淀区</li>
+        <li>怀柔区</li>
+        <li>西城区</li>
+        <li>丰台区</li>
+        <li>通州区</li>
+        <li>大兴区</li>
+    </ul>
+    </div>
+
+    <div class="city">
+        <img src="image/grey-right.png" class="left-tittle-img">
+        <p class="city_info">北京</p>
+    <ul class="city_child">
+        <li>朝阳区</li>
+        <li>海淀区</li>
+        <li>怀柔区</li>
+        <li>西城区</li>
+        <li>丰台区</li>
+        <li>通州区</li>
+        <li>大兴区</li>
+    </ul>
+    </div>
+
+    <div class="city">
+        <img src="image/grey-right.png" class="left-tittle-img">
+        <p class="city_info">北京</p>
+    <ul class="city_child">
+        <li>朝阳区</li>
+        <li>海淀区</li>
+        <li>怀柔区</li>
+        <li>西城区</li>
+        <li>丰台区</li>
+        <li>通州区</li>
+        <li>大兴区</li>
+    </ul>
+    </div>
+
+    <div class="city">
+        <img src="image/grey-right.png" class="left-tittle-img">
+        <p class="city_info">北京</p>
+    <ul class="city_child">
+        <li>朝阳区</li>
+        <li>海淀区</li>
+        <li>怀柔区</li>
+        <li>西城区</li>
+        <li>丰台区</li>
+        <li>通州区</li>
+        <li>大兴区</li>
+    </ul>
+    </div>
+
+    <div class="city">
+        <img src="image/grey-right.png" class="left-tittle-img">
+        <p class="city_info">北京</p>
+    <ul class="city_child">
+        <li>朝阳区</li>
+        <li>海淀区</li>
+        <li>怀柔区</li>
+        <li>西城区</li>
+        <li>丰台区</li>
+        <li>通州区</li>
+        <li>大兴区</li>
+    </ul>
+    </div>
+<!--<div id="borderdiv"></div>-->
+</div>
+
+<div id="left_btn">
+<img src="image/grey-left.png" id="left_btn_img">
+</div>
+
+<div class="center" id="center">
+    <div class="center-data">
+        <p class="center-tittle">海淀区风道实时变化图</p>
+        <div class="winddatadiv">
+        <img src="image/centerdata.jpg" style="width:100%;height: 100%">
+        </div>
+        <div class="center-control-div">
+            <ul class="center-control">
+                <li id="today">今天</li>
+                <li id="yesterday">昨天</li>
+                <li id="calendar"><input type="date"  min="2013-09-23" max="2015-09-4" style="width: 100%;text-align: center"></li>
+                <li id="refresh"><img src="image/refresh.png" class="refreshicon" ></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right" id="right">
+    <h1 class="right-tittle">过去1小时风道变化图</h1>
+    <div class="right-data"><img src="image/rightdata.png" class="right-data-img" width="100%" height="100%"></div>
+    <h1 class="right-tittle">昨日此时刻风道变化图</h1>
+    <div class="right-data"><img src="image/rightdata.png" class="right-data-img" width="100%" height="100%"></div>
+    <h1 class="right-tittle">风道变化趋势图</h1>
+    <div class="right-data"><img src="image/rightdata.png" class="right-data-img" width="100%" height="100%"></div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6c91160cd86ca4b9840a7ad5e7a81e44"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/windroad.js" charset="utf-8"></script>
+</html>
