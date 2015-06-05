@@ -1,0 +1,540 @@
+/**
+ * Created by lantian on 2015/6/1.
+ */
+html
+{
+    min-width: 900px;
+}
+body{
+    font-family: 'microsoft yahei',Arial,sans-serif;
+    color:#ffffff;
+    min-width: 900px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+#container-fluid
+{
+    background-color: #1b98c9;
+    border-color: transparent;
+    border-radius: 0;
+    height: 75px;
+    width:100%;
+    margin-bottom: 0;
+}
+.navbar{
+    list-style: none;
+    padding-left: 40px;
+    float:right;
+    margin-right: 200px;
+}
+
+
+.navbar li
+{
+    float: left;
+    margin-right: 50px;
+    line-height: 68px;
+    font-family: 'microsoft yahei', Arial, sans-serif;
+    text-decoration: none;
+    font-size:20px;
+    *cursor: hand;
+    cursor:pointer;
+}
+.navbar-right
+{
+    width: 150px;
+}
+
+.nav-item
+{
+    color: #FFFFFF;
+}
+
+.active-nav-item
+{
+    color: #a9df20;
+}
+
+.menu
+{
+    width: 110px;
+    height:200px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:72px;
+    z-index: 1;
+    display: none;
+}
+
+.menu ul
+{
+    list-style: none;
+    width: 110px;
+    padding: 0px;
+}
+.menu ul a
+{
+    text-decoration: none;
+    font-size: 15px;
+    width: 110px;
+    height:40px;
+    line-height: 40px;
+    margin-right: 0px;
+    text-align: center;
+    display: block;
+}
+
+.menu-item
+{
+    color:#101010;
+}
+
+.active-menu-item
+{
+    color:#1b99c9;
+}
+
+#menu2
+{
+    width: 150px;
+    height:150px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:72px;
+    z-index: 1;
+    display: none;
+    color: #080808;
+}
+
+#menu2 p
+{
+    font-size: 15px;
+    width: 100%;
+    height:40px;
+    line-height: 40px;
+}
+
+.active-menu-item
+{
+    color:#1b99c9;
+}
+.userimg
+{
+    margin-right: 15px;
+}
+
+.blankspace
+{
+    width: 800px;
+}
+
+.navbar-collapse
+{
+    float:left;
+    position: relative;
+    top:10px;
+}
+
+.adapter
+{
+    width: 300px;
+    height:75px;
+    display:none;
+    positon:relative;
+    margin:0 auto;
+    line-height: 75px;
+    font-size: 20px;
+    color: #FFFFFF;
+    *cursor: hand;
+    cursor:pointer;
+}
+
+.navbar li:hover
+{
+    color: #a9df20;
+}
+
+#left
+{
+    position: relative;
+    width: 240px;
+    top:0px;
+    background-color: #e7e9ee;
+    height:100%;
+    float:left;
+    color: #101010;
+    *cursor: hand;
+    cursor:pointer;
+}
+
+#borderdiv
+{
+    top:37px;
+    height:89%;
+    position: relative;
+    float: right;
+    background-color:lightsteelblue;
+    width: 3px;
+}
+
+#left_btn
+{
+    position: relative;
+    width:20px;
+    height:40px;
+    background-color:#e7e9ee ;
+    float:left;
+    border-bottom: 3px solid lightgray;
+    border-right: 2px solid lightgray;
+    border-bottom-right-radius: 4px;
+    z-index: 1;
+}
+
+#left_btn_img
+{
+    position:relative;
+    left:5px;
+    top:8px;
+}
+
+.city_child
+{
+    list-style: none;
+    display: none;
+    position: relative;
+    left:25%;
+    width: 65%;
+    font-size: 16px;
+    font-family: 'microsoft yahei', Arial, sans-serif;
+}
+
+.city_child li
+{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+.city_child li:hover
+{
+    background-color: #1b98c9;
+    color: #FFFFFF;
+}
+.city
+{
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.active-city
+{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+}
+
+.city_info
+{
+    text-align: center;
+    font-size:14px;
+    height:38px;
+    line-height: 48px;
+}
+
+.active-info
+{
+    color: #1b98c9;
+    border-right: 4px solid #1b98c9;
+}
+
+.left-tittle
+{
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 16px;
+    color: #4e5358;
+}
+.hideclass
+{
+    width:0px;
+}
+
+.left-tittle-img
+{
+    float: right;
+    margin-top: 20px;
+    margin-right:50px;
+}
+
+.center
+{
+    width: 70%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
+.center-full
+{
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    position: absolute;
+    left:0px;
+    top:75px;
+    z-index: 0;
+}
+
+#center
+{
+    color: #101010;
+}
+@media screen and (max-width: 1044px)
+{
+    .navbar
+    {
+        display: none;
+    }
+    .adapter
+    {
+        display: block;
+    }
+    #left
+    {
+        display: none;
+    }
+    .center
+    {
+        width: 100%;
+        height:100%;
+        position: absolute;
+        left: 0px;
+        top:75px;
+    }
+
+}
+
+.pm-potency
+{
+    width: 430px;
+    height: 200px;
+    margin-left: 3%;
+    margin-top:2%;
+}
+
+.pm-potency h4
+{
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    top: -165px;
+    left:0px;
+}
+
+.pm-potency-div
+{
+    position:relative ;
+    top:40px;
+    width: 430px;
+    height:160px;
+}
+
+.pm-change
+{
+    width:470px;
+    height: 300px;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+.pm-change-div
+{
+    position: relative;
+    top:40px;
+    left:-10px;
+    width: 470px;
+    height: 260px;
+}
+.pm-change h4
+{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    top:-270px;
+    left: 0px;
+}
+
+.pm-static
+{
+    width: 430px;
+    height: 190px;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+.pm-static h4
+{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    top:-160px;
+    left: 0px;
+}
+.pm-static-div
+{
+    position: relative;
+    width: 390px;
+    height: 150px;
+    left: 40px;
+    top:30px;
+}
+
+.tablehead
+{
+    background-color: lightgray;
+    width: 560px;
+    position: relative;
+    cursor: default;
+    text-align: center;
+    top:-20px;
+}
+
+.pm-rank
+{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    top:-725px;
+    left:50%;
+}
+
+#pm-rank-table-div
+{
+    width: 700px;
+    height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: relative;
+    top:-20px;
+}
+#pm-rank-table
+{
+    position: relative;
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+#pm-rank-table thead
+{
+    background-color: lightgray;
+}
+
+#pm-rank-table tbody
+{
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+#pm-rank-table tbody tr
+{
+    line-height: 30px;
+}
+#pm-rank-table tbody td
+{
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.tips
+{
+    position: relative;
+    top:-55px;
+}
+
+.search
+{
+    width: 200px;
+    position: relative;
+    left:345px;
+    top: -30px;
+}
+
+.pmlevel
+{
+    border-radius: 10px;
+    width: 60%;
+    height: 60%;
+    margin-left:20% ;
+}
+@media screen and (max-width: 1630px)
+{
+    #left_btn
+    {
+        display:none;
+    }
+}
+
+
+@media screen and (max-width: 1400px)
+{
+.pm-rank
+{
+    display: none;
+}
+
+    .pm-potency
+    {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+
+    .pm-potency-div
+    {
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+    .pm-change
+    {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+
+    .pm-change-div
+    {
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    .pm-static
+    {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+
+    .pm-static-div
+    {
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+}
+@media screen and  (min-width: 1024px)
+{
+ .center
+ {
+     margin-top: 20px;
+     margin-left: 20px;
+ }
+}
