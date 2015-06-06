@@ -54,13 +54,13 @@ $(document).ready(function() {
      */
     $(function () {
         var map = new BMap.Map('map', {mapType: BMAP_HYBRID_MAP});
-        //var map = new BMap.Map('map');
-        map.centerAndZoom("河北", 12);
-        var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
-        var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+        //map.centerAndZoom(new BMap.Point(117.196234, 39.134324), 11);
+        map.centerAndZoom("娌冲寳",11);
+        var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});
+        var top_left_navigation = new BMap.NavigationControl();
 
         var countyNameArray = [];
-        countyNameArray.push("河北省");
+        countyNameArray.push("娌冲寳");
         for (var i = 0; i < countyNameArray.length; i++) {
             getBoundary(countyNameArray[i]);
         }
@@ -75,10 +75,10 @@ $(document).ready(function() {
             var point = new BMap.Point(lng, lat);
             var options = {};
             var marker = new BMap.Marker(point, options);
-            marker.addEventListener("mousedown", showArea);
-            marker.addEventListener("mouseup", deleteLastOverlay);
-            marker.addEventListener("mouseover", showLatLng);
-            marker.addEventListener("mouseout", deleteLastOverlay);
+            //marker.addEventListener("mousedown", showArea);
+            //marker.addEventListener("mouseup", deleteLastOverlay);
+            //marker.addEventListener("mouseover", showLatLng);
+            //marker.addEventListener("mouseout", deleteLastOverlay);
             map.addOverlay(marker);
         }
 
@@ -116,16 +116,16 @@ $(document).ready(function() {
             var lng = e.point.lng;
             var point = new BMap.Point(lng, lat);
             var opts = {
-                position: point,    // 指定文本标注所在的地理位置
-                offset: new BMap.Size(30, -30)    //设置文本偏移量
+                position: point,
+                offset: new BMap.Size(30, -30)
             };
-            var label = new BMap.Label("lng: " + lng.toString() + ", lat: " + lat.toString(), opts);  // 创建文本标注对象
+            var label = new BMap.Label("lng: " + lng.toString() + ", lat: " + lat.toString(), opts);
             label.setStyle({
                 color: "white",
                 fontSize: "12px",
                 height: "20px",
-                lineHeight: "20px",
-                fontFamily: "微软雅黑"
+                lineHeight: "20px"
+                //fontFamily: "微锟斤拷锟脚猴拷"
             });
             map.addOverlay(label);
         }
@@ -134,7 +134,7 @@ $(document).ready(function() {
             var lat = e.point.lat;
             var lng = e.point.lng;
             var point = new BMap.Point(lng, lat);
-            var radius = 1000; //单位m
+            var radius = 1000;
             var circle = new BMap.Circle(point, radius, {
                 strokeColor: "",
                 strokeWeight: 1,
@@ -153,13 +153,12 @@ $(document).ready(function() {
 
         function getBoundary(countyName) {
             var bdary = new BMap.Boundary();
-            bdary.get(countyName, function (rs) {       //获取行政区域
-                //map.clearOverlays();        //清除地图覆盖物
-                var count = rs.boundaries.length; //行政区域的点有多少个
+            bdary.get(countyName, function (rs) {
+                var count = rs.boundaries.length;
                 for (var i = 0; i < count; i++) {
-                    var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 1, strokeColor: "#ff0000"}); //建立多边形覆盖物
-                    map.addOverlay(ply);  //添加覆盖物
-                    map.setViewport(ply.getPath());    //调整视野
+                    var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 1, strokeColor: "#ff0000"});
+                    map.addOverlay(ply);
+                    map.setViewport(ply.getPath());
                 }
             });
         }

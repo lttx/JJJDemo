@@ -319,16 +319,16 @@ $(document).ready(function(){
             var lng = e.point.lng;
             var point = new BMap.Point(lng,lat);
             var opts = {
-                position : point,    // ָ���ı���ע���ڵĵ���λ��
-                offset   : new BMap.Size(30, -30)    //�����ı�ƫ����
+                position : point,
+                offset   : new BMap.Size(30, -30)
             };
-            var label = new BMap.Label("lng: "+lng.toString()+", lat: "+lat.toString(), opts);  // �����ı���ע����
+            var label = new BMap.Label("lng: "+lng.toString()+", lat: "+lat.toString(), opts);
             label.setStyle({
                 color : "white",
                 fontSize : "12px",
                 height : "20px",
-                lineHeight : "20px",
-                fontFamily:"΢���ź�"
+                lineHeight : "20px"
+                //fontFamily:"΢���ź�"
             });
             map.addOverlay(label);
         }
@@ -336,7 +336,7 @@ $(document).ready(function(){
             var lat = e.point.lat;
             var lng = e.point.lng;
             var point = new BMap.Point(lng,lat);
-            var radius = 1000; //��λm
+            var radius = 1000;
             var circle = new BMap.Circle(point,radius,{strokeColor:"",strokeWeight:1,strokeStyle:"dashed",fillColor:"#66cc00",fillOpacity:0.2});
             map.addOverlay(circle);
         }
@@ -347,13 +347,13 @@ $(document).ready(function(){
         }
         function getBoundary(countyName){
             var bdary = new BMap.Boundary();
-            bdary.get(countyName, function(rs){       //��ȡ��������
-                //map.clearOverlays();        //�����ͼ������
-                var count = rs.boundaries.length; //��������ĵ��ж��ٸ�
+            bdary.get(countyName, function(rs){
+                //map.clearOverlays();
+                var count = rs.boundaries.length;
                 for(var i = 0; i < count; i++){
-                    var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 1, strokeColor: "#ff0000"}); //��������θ�����
-                    map.addOverlay(ply);  //��Ӹ�����
-                    map.setViewport(ply.getPath());    //������Ұ
+                    var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 1, strokeColor: "#ff0000"});
+                    map.addOverlay(ply);
+                    map.setViewport(ply.getPath());
                 }
             });
         }
