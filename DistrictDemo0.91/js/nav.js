@@ -62,10 +62,11 @@ $(document).ready(function() {
             var cityName = '北京';
             map = initMap('map',cityName,{mapType: BMAP_HYBRID_MAP});
             drawBoundary(map,cityName);
-            var newPoints = generatePoint(beijingBoundaries,40.54, 39.52, 30, 117.12, 115.972, 40);
-            for (var x = 0; x < newPoints.length; x++) {
-                beijingPoints.push(newPoints[x]);
-            }
+            //var newPoints = generatePoint(beijingBoundaries,40.54, 39.52, 30, 117.12, 115.972, 40);
+            //for (var x = 0; x < newPoints.length; x++) {
+            //    beijingPoints.push(newPoints[x]);
+            //}
+            //$('#result').val(beijingPoints);
             for (var i = 0; i < beijingPoints.length; i++) {
                 var lng = beijingPoints[i][0];
                 var lat = beijingPoints[i][1];
@@ -83,10 +84,11 @@ $(document).ready(function() {
             var cityName = '天津';
             map = initMap('map',cityName,{mapType: BMAP_HYBRID_MAP});
             drawBoundary(map,cityName);
-            var newPoints = generatePoint(tianjinBoundaries,40.27, 38.54, 30, 118.09, 116.70, 40);
-            for (var x = 0; x < newPoints.length; x++) {
-                tianjinPoints.push(newPoints[x]);
-            }
+            //var newPoints = generatePoint(tianjinBoundaries,40.27, 38.54, 30, 118.09, 116.70, 40);
+            //for (var x = 0; x < newPoints.length; x++) {
+            //    tianjinPoints.push(newPoints[x]);
+            //}
+            //$('#result').val(tianjinPoints);
             for (var i = 0; i < tianjinPoints.length; i++) {
                 var lng = tianjinPoints[i][0];
                 var lat = tianjinPoints[i][1];
@@ -108,10 +110,10 @@ $(document).ready(function() {
             var cityName = '河北';
             map = initMap('map',cityName,{mapType: BMAP_HYBRID_MAP});
             drawBoundary(map,cityName);
-            var newPoints = generatePoint(hebeiBoundaries,42.60, 36.04, 25, 119.98, 113.45, 30);
-            for (var x = 0; x < newPoints.length; x++) {
-                hebeiPoints.push(newPoints[x]);
-            }
+            //var newPoints = generatePoint(hebeiBoundaries,42.60, 36.04, 25, 119.98, 113.45, 30);
+            //for (var x = 0; x < newPoints.length; x++) {
+            //    hebeiPoints.push(newPoints[x]+'\r\n');
+            //}
             for (var i = 0; i < hebeiPoints.length; i++) {
                 var lng = hebeiPoints[i][0];
                 var lat = hebeiPoints[i][1];
