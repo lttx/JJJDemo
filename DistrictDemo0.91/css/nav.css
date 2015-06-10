@@ -1,0 +1,66 @@
+/**
+ * Created by lantian on 2015/6/1.
+ */
+
+body{
+    font-family: 'microsoft yahei',Arial,sans-serif;
+    color:#ffffff;
+    min-width: 900px;
+}
+
+.map{
+    position: absolute;
+    width:100%;
+    height: 100%;
+
+}
+.center
+{
+    width: 78%;
+    height: 85%;
+    position: relative;
+    float: left;
+    left: 60px;
+    top:25px;
+}
+
+.center-full
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:75px;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1123px)
+{
+  .navbar
+  {
+      display: none;
+  }
+    .adapter
+    {
+        display: block;
+    }
+
+    #left
+    {
+        display: none;
+    }
+
+    #left_btn
+    {
+        display: none;
+    }
+
+    .center
+    {
+        position: absolute;
+        top:75px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}

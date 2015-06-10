@@ -1,0 +1,39 @@
+html{
+    height:100%;
+    min-width:970px;
+}
+body{
+    background:url(../image/background.png) no-repeat center center fixed;
+    font-family: 'microsoft yahei',Arial,sans-serif;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    text-align: center;
+}
+.out{
+    width: 480px;
+    height:50px;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    background-color: #F5F6F7;
+    margin:63px auto;
+    overflow: hidden;
+}
+.title{
+    color:#FFFFFF;
+    font-size: 50px;
+    margin-top:20%;
+    letter-spacing: 10px;
+}
+.form-control{
+    position: relative;
+    margin-top: 7px;
+}
+.footer{
+    position:fixed;
+    left: 42%;
+    bottom:30px;
+    _position:absolute;
+    _top:expression(document.documentElement.clientHeight + document.documentElement.scrollTop - this.offsetHeight);
+}

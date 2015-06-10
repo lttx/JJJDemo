@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>京津冀雾霾监测管理分析平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/NavandLeft.css" rel="stylesheet">
+    <link href="css/polutionlevel.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="container-fluid"></div>
+
+<div id="left"></div>
+
+<div id="left_btn">
+    <img src="image/grey-left.png" id="left_btn_img">
+</div>
+
+<div class="center" id="center">
+
+    <div class="pm-potency">
+        <h4><span><span class="pmdistrict">海淀区</span>PM2.5实时平均值</span></h4>
+        <img style="position: absolute;left: 250px;top:150px;z-index: 0" src="image/loading.gif" id="loadimg">
+
+        <div class="pm-potency-div">
+            <div id="realTimeData" style="width:600px; height: 400px"></div>
+        </div>
+        <p class="tips"><b>温馨提示:</b>应减少户外运动，外出时佩戴口罩，关闭窗户。敏感人群应留在室内。</p>
+    </div>
+
+    <div class="pm-change">
+        <h4><span><span class="pmdistrict">海淀区</span>PM2.5平均值变化表</span></h4>
+        <div class="pm-change-div" id="meanValueLine">
+        </div>
+    </div>
+
+    <div class="pm-rank">
+        <h4><span><span class="pmdistrict">海淀区</span>污染排名</span></h4>
+        <div class="search">
+            <input type="text" id = "search">
+            <img id="searchbtn" src="image/searchbtn.png" width="27px" height="25px" style="position: relative;left: -5px;top: -2px;">
+        </div>
+        <div id="pm-rank-table-div">
+            <table id="pm-rank-table" border="0" cellspacing="0" cellpadding="0">
+                <thead>
+                <tr><td >监测站点</td>
+                    <td >PM2.5</td>
+                    <td >浓度</td>
+                    <td >站点位置</td></tr>
+                </thead>
+                <tbody>
+                <tr><td>站点1</td><td>350</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点2</td><td>226</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点3</td><td>125</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点4</td><td>114</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点5</td><td>83</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点6</td><td>40</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点7</td><td>17</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点8</td><td>20</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点9</td><td>130</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点10</td><td>250</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点11</td><td>360</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点12</td><td>700</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点13</td><td>102</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点14</td><td>85</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点15</td><td>58</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点16</td><td>26</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点17</td><td>62</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点18</td><td>18</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点19</td><td>299</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点20</td><td>344</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点21</td><td>27</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点22</td><td>211</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点23</td><td>125</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点24</td><td>24</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点25</td><td>93</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点26</td><td>8</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                <tr><td>站点27</td><td>41</td><td><div class="pmlevel"></div></td><td>苏州街</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/loadnavadnleft.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/dist/echarts.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6c91160cd86ca4b9840a7ad5e7a81e44"></script>
+<script type="text/javascript" src="js/polutionlevel.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="js/NavandLeft.js" charset="utf-8"></script>
+</html>

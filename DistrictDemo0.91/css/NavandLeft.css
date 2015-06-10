@@ -1,0 +1,293 @@
+html
+{
+    min-width: 900px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    font-family: 'microsoft yahei',Arial,sans-serif;
+    color:#ffffff;
+    min-width: 900px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#container-fluid
+{
+    background-color: #1b98c9;
+    border-color: transparent;
+    border-radius: 0;
+    height: 75px;
+    width:100%;
+    margin-bottom: 0;
+}
+.navbar{
+    list-style: none;
+    padding-left: 40px;
+    float:right;
+    margin-right: 200px;
+}
+
+
+.navbar li
+{
+    float: left;
+    margin-right: 50px;
+    line-height: 68px;
+    font-family: 'microsoft yahei', Arial, sans-serif;
+    text-decoration: none;
+    font-size:20px;
+    *cursor: hand;
+    cursor:pointer;
+}
+.navbar-right
+{
+    width: 150px;
+}
+
+.nav-item
+{
+    color: #FFFFFF;
+}
+
+.navbar li:hover
+{
+    color: #a9df20;
+}
+
+.active-nav-item
+{
+    color: #a9df20;
+}
+
+.menu
+{
+    width: 110px;
+    height:200px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:74px;
+    z-index: 1;
+    display: none;
+    border: 1px solid silver;
+
+}
+
+.menu ul
+{
+    list-style: none;
+    width: 110px;
+    padding: 0px;
+}
+.menu ul a
+{
+    text-decoration: none;
+    font-size: 15px;
+    width: 110px;
+    height:40px;
+    line-height: 40px;
+    margin-right: 0px;
+    text-align: center;
+    display: block;
+}
+
+.menu ul p
+{
+    color: #030303;
+    text-decoration: none;
+    font-size: 15px;
+    width: 110px;
+    height:40px;
+    line-height: 40px;
+    margin-right: 0px;
+    text-align: center;
+    display: block;
+}
+
+.menu ul p:hover
+{
+    color: #0662a6;
+}
+.menu-item
+{
+    color:#101010;
+}
+
+.active-menu-item
+{
+    color:#1b99c9;
+}
+
+#menu2
+{
+    width: 150px;
+    height:auto;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:74px;
+    z-index: 6;
+    display: none;
+    color: #080808;
+    border: 1px solid silver;
+}
+
+#menu2 a
+{
+    font-size: 15px;
+    width: 150px;
+    height:40px;
+    line-height: 40px;
+}
+
+.active-menu-item
+{
+    color:#1b99c9;
+}
+.userimg
+{
+    margin-right: 15px;
+}
+
+.blankspace
+{
+    width: 800px;
+}
+
+.navbar-collapse
+{
+    float:left;
+    position: relative;
+    top:10px;
+}
+
+.adapter
+{
+    width: 300px;
+    height:75px;
+    display:none;
+    positon:relative;
+    margin:0 auto;
+    line-height: 75px;
+    font-size: 20px;
+    color: #FFFFFF;
+    *cursor: hand;
+    cursor:pointer;
+}
+
+#left
+{
+    position: relative;
+    width: 240px;
+    top:0px;
+    background-color: #e7e9ee;
+    height:100%;
+    float:left;
+    color: #101010;
+    *cursor: hand;
+    cursor:pointer;
+}
+
+#borderdiv
+{
+    top:37px;
+    height:89%;
+    position: relative;
+    float: right;
+    background-color:lightsteelblue;
+    width: 3px;
+}
+
+#left_btn
+{
+    position: relative;
+    width:20px;
+    height:40px;
+    background-color:#e7e9ee ;
+    float:left;
+    border-bottom: 3px solid lightgray;
+    border-right: 2px solid lightgray;
+    border-bottom-right-radius: 4px;
+    z-index: 1;
+}
+
+#left_btn_img
+{
+    position:relative;
+    left:5px;
+    top:8px;
+}
+
+.city_child
+{
+    list-style: none;
+    display: none;
+    position: relative;
+    left:25%;
+    width: 65%;
+    font-size: 14px;
+    font-family: 'microsoft yahei', Arial, sans-serif;
+}
+
+.city_child li
+{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+.city_child li:hover
+{
+    background-color: #1b98c9;
+    color: #FFFFFF;
+}
+.city
+{
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.active-city
+{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+}
+
+.city_info
+{
+    text-align: center;
+    font-size:14px;
+    height:38px;
+    line-height: 48px;
+}
+
+.active-info
+{
+    color: #1b98c9;
+    border-right: 4px solid #1b98c9;
+}
+
+.left-tittle
+{
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 16px;
+    color: #4e5358;
+}
+.hideclass
+{
+    width:0px;
+}
+
+.left-tittle-img
+{
+    float: right;
+    margin-top: 20px;
+    margin-right:50px;
+}

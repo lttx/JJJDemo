@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>京津冀雾霾监测管理分析平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/NavandLeft.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <style type="text/css">
+        body, html,#map {width: 100%;height: 100%;overflow: hidden;margin:0;}
+    </style>
+
+
+</head>
+<body>
+<div id="container-fluid">
+    <a href="http://www.coilabs.com"><img src="image/logo.png" class="navbar-collapse"></a>
+    <ul class="navbar">
+        <li class="nav-item">数据统计</li>
+        <li class="active-nav-item">部署地区</li>
+
+        <li class="nav-item">
+            <div class="deploy">
+                <span >部署案例</span>
+                <img  style="margin-left: 5px" src="image/wgrey-down.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="polutionlevel.html">各区污染排名</a>
+                    <a href="windroad_apply.html">风道应用</a>
+                    <a href="roadpolution.html">道路管理</a>
+                    <a>扬尘管理</a>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item"><img src="image/user.png" class="userimg">
+            <span><a id="username" style="color: white">admin</a></span>
+        </li>
+    </ul>
+
+
+    <div class="adapter"><span id="adapterbtn">点击此处进行相关操作</span>
+        <div id="menu2">
+            <ul>
+                <a href="navigation.html">部署地区</a><br>
+                <a href="polutionlevel.html">各区污染排名</a><br>
+                <a href="windroad_apply.html">风道应用</a><br>
+                <a href="roadpolution.html">道路管理</a>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+<div id="left">
+    <p class="left-tittle"><a href="navigation.html">区县管理</a></p>
+    <div class="city" >
+        <img src="image/grey-right.png" class="left-tittle-img">
+        <p class="city_info" id="beijing">北京</p>
+        <ul class="city_child">
+            <li>东城区</li>
+            <li>西城区</li>
+            <li>朝阳区</li>
+            <li>海淀区</li>
+            <li>丰台区</li>
+            <li>石景山区</li>
+            <li>门头沟区</li>
+            <li>房山区</li>
+            <li>大兴区</li>
+            <li>通州区</li>
+            <li>顺义区</li>
+            <li>昌平区</li>
+            <li>平谷区</li>
+            <li>怀柔区</li>
+            <li>密云县</li>
+            <li>延庆县</li>
+        </ul>
+    </div>
+
+    <div class="city" >
+        <img src="image/grey-right.png" class="left-tittle-img">
+        <p class="city_info" id="tianjin">天津</p>
+        <ul class="city_child">
+            <li>和平区</li>
+            <li>河西区</li>
+            <li>南开区</li>
+            <li>河东区</li>
+            <li>河北区</li>
+            <li>红桥区</li>
+            <li>东丽区</li>
+            <li>津南区</li>
+            <li>西青区</li>
+            <li>北辰区</li>
+            <li>滨海新区</li>
+            <li>武清区</li>
+            <li>宝坻区</li>
+            <li>蓟县</li>
+            <li>宁河县</li>
+            <li>静海县</li>
+        </ul>
+    </div>
+
+    <div class="city" >
+        <img src="image/grey-right.png" class="left-tittle-img">
+        <p class="city_info" id="hebei">河北</p>
+        <ul class="city_child">
+            <li>石家庄</li>
+            <li>唐山</li>
+            <li>秦皇岛</li>
+            <li>邯郸</li>
+            <li>邢台</li>
+            <li>保定</li>
+            <li>张家口</li>
+            <li>承德</li>
+            <li>沧州</li>
+            <li>廊坊</li>
+            <li>衡水</li>
+        </ul>
+    </div>
+
+    <!--<div id="borderdiv"></div>-->
+</div>
+
+<div id="left_btn">
+    <img src="image/grey-left.png" id="left_btn_img">
+</div>
+<div class="center" id="center">
+    <div id="map" class="map"></div>
+</div>
+
+
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6c91160cd86ca4b9840a7ad5e7a81e44"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="data/mapmarkers.js"></script>
+<script type="text/javascript" src="js/application/map.js"></script>
+<script type="text/javascript" src="js/nav.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/NavandLeft-nav.js" charset="utf-8"></script>
+</html>
