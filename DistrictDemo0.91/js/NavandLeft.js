@@ -20,12 +20,21 @@ $(document).ready(function() {
         setdata(0);
     });
 
+
     $("#yesterday").click(function(){
         setdata(-1);
+        $("#curheatmap").attr("src","image/fd-2.png");
+        $("#right-data-1").attr("src","image/rightdata.png");
+        $("#right-data-2").attr("src","image/fd-3.png");
+        $("#right-data-3").attr("src","image/fd-1.png");
     });
 
     $("#today").click(function(){
         setdata(0);
+        $("#curheatmap").attr("src","image/centerdata.jpg");
+        $("#right-data-1").attr("src","image/fd-1.png");
+        $("#right-data-2").attr("src","image/fd-2.png");
+        $("#right-data-3").attr("src","image/fd-3.png");
     });
 
     function setdata(num)

@@ -108,7 +108,7 @@ $(document).ready(function() {
             var cityName = '河北';
             map = initMap('map',cityName,{mapType: BMAP_HYBRID_MAP});
             drawBoundary(map,cityName);
-            var newPoints = generatePoint(hebeiBoundaries,42.60, 36.04, 30, 119.98, 113.45, 40);
+            var newPoints = generatePoint(hebeiBoundaries,42.60, 36.04, 25, 119.98, 113.45, 30);
             for (var x = 0; x < newPoints.length; x++) {
                 hebeiPoints.push(newPoints[x]);
             }
