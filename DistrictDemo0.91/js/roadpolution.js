@@ -3,7 +3,6 @@
  */
 $(document).ready(function() {
 
-    $("#left-tittle").text("道路污染情况");
 
     var option={};
 

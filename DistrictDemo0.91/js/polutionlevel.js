@@ -2,10 +2,7 @@
  * Created by lt on 2015/6/1.
  */
 $(document).ready(function() {
-    /**
-     * Created by lantian on 2015/6/1.
-     */
-    $("#left-tittle").text("各区污染排行");
+
 
     $(function () {
         $('#pm-rank-table').tablesorter({
@@ -104,6 +101,7 @@ $(document).ready(function() {
            $(window).width("1000px");
         }
     });
+
     $(".city_child li").click(function(){
         var text = $(this).text();
         $(".pmdistrict").html(text);

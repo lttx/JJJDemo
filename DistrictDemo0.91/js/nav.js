@@ -4,7 +4,6 @@ $(document).ready(function() {
      */
     $("#left-tittle").text("区域部署");
     var map;
-    //var ply;
     allmap();
     $(".city p").click(function(){
         var location = this.id;
